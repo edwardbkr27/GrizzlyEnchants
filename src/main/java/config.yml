@@ -1,0 +1,61 @@
+# Variables
+#
+# %grizzlypickaxe% - The name of the enchant.
+# %grizzlypickaxeU% - The name of the enchant in UPPERCASE.
+# %grizzlypickaxeL% - The name of the enchant in lowercase.
+# %color% - The color of the enchant.
+# %colorB% - The color of the enchant in BOLD text.
+# %identifier% - The enchant Identifier (REQUIRED)
+
+# The identifier is required somewhere in the lore.
+enchant-identifier: '%color%&oThis is a %grizzlyenchant% Enchant.'
+
+#Global lore for EVERY enchant.
+lore:
+  - '%identifier%'
+  - ''
+  - '%LIST_BONUS%' # This will list all of the bonuses for the enchant.
+  - '&7&o(Requires you to be holding the enchanted item).'
+
+#Treasure enchant loot
+#FORMAT (name: itemname: command: chance%:)
+# Needs to add to 100%
+treasure:
+  votecrate:
+    command: 'crate give to {player} votecrate'
+    chance: 15
+  rarecrate:
+    command: 'crate give to {player} rarecrate'
+    chance: 10
+  ultimatecrate:
+    command: 'crate give to {player} ultimatecrate'
+    chance: 7
+  legendarycrate:
+    command: 'crate give to {player} legendarycrate'
+    chance: 5
+  mythicalcrate:
+    command: 'crate give to {player} mythicalcrate'
+    chance: 3
+  enchantcrate:
+    command: 'crate give to {player} enchantcrate'
+    chance: 5
+  miningcrate:
+    command: 'crate give to {player} miningcrate'
+    chance: 10
+  filler:
+    command: 'eco give {player} 1'
+    chance: 45
+
+tokenshop:
+  votecrate:
+    price: 25000
+    displayName: "&a&lVote Crate Key"
+    displayItem: TRIPWIRE_HOOK
+    command: "crate give to {player} votecrate"
+    id: 0
+  rarecrate:
+    price: 25000
+    displayName: "&9&lRare Crate Key"
+    displayItem: TRIPWIRE_HOOK
+    command: "crate give to {player} rarecrate"
+    id: 1
